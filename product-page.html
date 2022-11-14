@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/aharoni-clm" rel="stylesheet">
+</head>
+<body>
+
+
+<header id="header">
+    <div id="header-img-wrapper"><img id="header-img" src="https://i.imgur.com/fPb0PPm.png"
+                              alt="company-logo"></div>
+    <h1>Sarif IndustrieS</h1>
+    <nav id="nav-bar">
+        <ul>
+            <li><a class="nav-link" href="#newsletter-link">
+                <div class="nav-link-content">Our newsletter</div>
+            </a></li>
+            <li><a class="nav-link" href="#features-link">
+                <div class="nav-link-content">Our values</div>
+            </a></li>
+            <li><a class="nav-link" href="#demonstration-link">
+                <div class="nav-link-content">Our customers</div>
+            </a></li>
+            <li><a class="nav-link" href="#products-link">
+                <div class="nav-link-content">Our products</div>
+            </a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="newsletter-sub">
+        <div id="newsletter-link" class="hidden-link"></div>
+        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+            <h3>RECEIVE OUR LATEST NEWS! </h3>
+            <p>Subscribe to our newsletter to catch new product releases, discount programs and more!</p>
+            <label for="email"><input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+            <input id="submit" type="submit" value="Subscribe!">
+        </form>
+    </section>
+    <div class="section-divider"></div>
+    <div class="hidden-link" id="features-link"></div>
+    <section id="features">
+        <h2 class="section-title">OUR VALUES </h2>
+        <p>Here at Sarif Industries we pride ourselves in our ability to bring our customers
+            only the most sophisticated and cutting-edge products in the industry! Here's what
+            You'll be getting by enacting Your augmentation with us:</p>
+        <h3>Reliability</h3>
+        <p>
+            Before being released commercially, our product goes through an all-encompassing and
+            comprehensive testing period so that You, our customer, may get only the best fruits of our
+            R&D labour!</p>
+        <h3>Responsiveness</h3>
+        <p>
+            Having to undergo limb or organ replacement is without a doubt a very stressful endeavour,
+            so our aim with our projects is to provide the best possible replacement for You.
+            We guarantee that with our products You won't even feel a difference!
+        </p>
+        <h3>Modernity</h3>
+        <p>
+            Currently, evolution of augmentation technology is moving at an unprecedented pace. New research and
+            insight in this field is coming out almost daily, in which our company plays no small part
+            due to the incredibly robust R&D laboratories that are always achieving new ways to deliver
+            the best products to our customers!
+        </p>
+    </section>
+    <div class="section-divider"></div>
+    <section id="demonstration">
+        <div class="hidden-link" id="demonstration-link"></div>
+        <h2 class="section-title">OUR CUSTOMERS</h2>
+        <p>Still having doubts? Perhaps first-hand accounts of our customers might change your mind!</p>
+        <iframe src="https://www.youtube.com/embed/UG_oThcYsn0"
+                title="Deus Ex: Human Revolution - Sarif Industries Trailer"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen id="video"></iframe>
+    </section>
+    <div class="section-divider"></div>
+    <section id="products">
+        <div class="hidden-link" id="products-link"></div>
+        <h2 class="section-title">OUR PRODUCTS</h2>
+        <div id="product-wrapper">
+            <div class="product"><img class="product-img"
+                                      src="https://media.sketchfab.com/models/e988ba5725fe4111b82f945a068c7c81/thumbnails/80ea8fb2e5874a0db19fe9b45368f5f7/a4faae67958a442d858a2e308b5c0b11.jpeg"
+                                      alt="retinal-prosthetic">
+                <p class="product-desc">Retinal Prosthesis</p>
+            </div>
+            <div class="product"><img class="product-img"
+                                      src="https://techgirl.co.za/wp-content/uploads/2016/08/untitled-2.jpg"
+                                      alt="arm-prosthetic">
+                <p class="product-desc">Arm Prosthesis</p>
+            </div>
+            <div class="product"><img class="product-img"
+                                      src="https://i.pinimg.com/originals/06/91/34/069134fea37e8d029251f6a30cab8506.jpg"
+                                      alt="heart-prosthetic">
+                <p class="product-desc">Heart Prosthesis</p>
+            </div>
+            <div class="product"><img class="product-img"
+                                      src="https://techgirl.co.za/wp-content/uploads/2016/08/tumblr_m7bxsrZuq11qgb1o5o2_1280.jpg"
+                                      alt="leg-prosthetic">
+                <p class="product-desc">Leg Prosthesis</p>
+            </div>
+            <div class="product"><img class="product-img"
+                                      src="https://independentphilosopher.files.wordpress.com/2015/04/sarif-industries-computer-assisted-social-interaction-enhancer-cranial-implant-micromputer-module.jpg?w=1200"
+                                      alt="neural-enhancement">
+                <p class="product-desc">Neural Enhancement</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-links">
+        <a class="footer-link" href="surveyform.html">
+            <div class="footer-link-content">Privacy</div>
+        </a>
+        <a class="footer-link" href="surveyform.html">
+            <div class="footer-link-content">Terms</div>
+        </a>
+        <a class="footer-link" href="surveyform.html">
+            <div class="footer-link-content">Contact</div>
+        </a>
+        </div>
+        <address>Copyright 2022, Sarif Industries</address>
+    </footer>
+</main>
+</body>
+</html>
