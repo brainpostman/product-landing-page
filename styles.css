@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Aharoni CLM', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1D1D1D;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #EFBF4F;
+}
+
+/* HEADER-NAVIGATION BAR */
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(-90deg, #0D0D0D 45%, #1D1D1D 50%, #403014 75%, #8C6723 95%, #D9A036);
+    z-index: 999;
+}
+
+#header-img-wrapper {
+    margin-right: auto;
+    margin-left: 10px;
+    height: 100%;
+    max-width: 160px;
+}
+
+#header-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+header > h1 {
+    color: white;
+    font-family: 'Trajan Pro', sans-serif;
+    text-align: center;
+    align-self: center;
+    font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > nav {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 35vw;
+}
+
+nav > ul {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    gap: 2vw;
+}
+
+nav > ul > li {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* GENERAL PROPERTIES OF MAIN CONTENT OF THE WEBPAGE */
+
+main {
+    margin-top: 17rem;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h2, h3 {
+    font-family: "Trajan Pro", sans-serif;
+}
+
+.section-title {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-divider {
+    margin: 4rem auto;
+    content: "";
+    width: 80%;
+    height: 4px;
+    border: none;
+    background: linear-gradient(90deg, #8C6723, #EFBF4F 50%, #8C6723);
+
+}
+
+.hidden-link {
+    top: -200px;
+    position: relative;
+    content: "";
+}
+
+/* NEWSLETTER */
+#newsletter-sub {
+    text-align: center;
+    width: 100%;
+}
+
+#newsletter-sub h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+    margin: 0 auto;
+    color: #EFBF4F;
+}
+
+#newsletter-sub p {
+    font-size: 2.5rem;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+}
+
+#newsletter-sub input, #newsletter-sub label {
+    font-family: 'Aharoni CLM', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#email {
+    text-align: center;
+    font-size: 2rem;
+    background-color: white;
+    color: #0D0D0D;
+    width: 25%;
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#email::placeholder {
+    color: #0D0D0D;
+}
+
+#submit {
+    width: 15%;
+    font-size: 2rem;
+    height: 3rem;
+    background-color: #D9A036;
+    border: none;
+}
+
+#submit:hover {
+    background-color: #EFBF4F;
+    cursor: pointer;
+}
+
+/* COMPANY VALUES */
+#features {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+#features h3 {
+    font-size: 3rem;
+    text-align: center;
+    color: #EFBF4F;
+    align-items: center;
+    margin-right: auto;
+}
+
+#features p {
+    font-size: 2rem;
+    margin: 3rem auto;
+}
+
+/* DEMONSTRATION VIDEO */
+#demonstration {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+#demonstration p {
+    font-size: 3rem;
+    margin: 3rem auto;
+}
+
+#demonstration iframe {
+    max-width: 600px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+}
+
+/* PRODUCTS */
+#products {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    max-width: 80%;
+    width: 100%;
+}
+
+#product-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    margin: 6rem auto 0 auto;
+    gap: 2rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+}
+
+.product p {
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#product-wrapper::after {
+    content: "";
+    width: 350px;
+}
+
+.product-img:hover {
+    height: unset;
+    object-fit: unset;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 4rem 2rem 2rem 2rem;
+    align-items: flex-start;
+    margin: 4rem 0 0 0;
+    background-color: #0D0D0D;
+}
+
+#footer-links {
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto 4rem auto;
+}
+
+address {
+    color: #8C6723;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 850px) {
+    #header-img {
+        width: 1px;
+        height: 1px;
+    }
+
+    header {
+        font-size: 2rem;
+    }
+
+    header ul {
+        font-size: 1.5rem;
+    }
+}
+
